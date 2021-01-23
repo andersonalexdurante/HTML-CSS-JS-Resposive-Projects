@@ -93,7 +93,7 @@ main .imgBox img {
 .thumb {
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 20px;
   transform: translateX(-50%);
   display: flex;
 }
@@ -137,4 +137,39 @@ main .imgBox img {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    display: none;
+  }
+  section {
+    padding: 20px 20px 120px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  main .textBox {
+    max-width: 100%;
+  }
+  main .textBox h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  main .imgBox {
+    max-width: 100%;
+    justify-content: center;
+  }
+  main .imgBox img {
+    max-width: 250px;
+  }
+  .circle {
+    clip-path: circle(400px at center bottom);
+  }
 }
